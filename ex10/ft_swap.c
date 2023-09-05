@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anthtorr <anthtorr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/04 18:04:26 by anthtorr          #+#    #+#             */
-/*   Updated: 2023/09/05 14:10:10 by anthtorr         ###   ########.fr       */
+/*   Created: 2023/09/05 13:39:31 by anthtorr          #+#    #+#             */
+/*   Updated: 2023/09/05 13:52:58 by anthtorr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_print_alphabet(void)
+void	ft_swap(int *a, int *b)
 {
-	char	letter;
+	int	c;
 
-	letter = 'a';
-	while (letter <= 'z')
-	{
-		ft_putchar(letter);
-		letter++;
-	}
-	ft_putchar('\n');
+	c = *a;
+	*a = *b;
+	*b = c;
 }
 /*
-int	main(void)
+#include <stdio.h>
+int main(void)
 {
-	ft_print_alphabet();
+	int	a;
+	int	b;
+	
+	a = 1;
+	b = 5;
+	printf("El valor de a es : %d y el valor de b es: %d\n", a, b);
+	ft_swap(&a,&b);
+	printf("El nuevo valor de a es : %d y el nuevo valor de b es: %d\n", a, b);
 	return (0);
 }
 */

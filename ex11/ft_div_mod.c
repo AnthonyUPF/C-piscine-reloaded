@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anthtorr <anthtorr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/04 18:04:26 by anthtorr          #+#    #+#             */
-/*   Updated: 2023/09/05 14:10:10 by anthtorr         ###   ########.fr       */
+/*   Created: 2023/09/05 13:55:05 by anthtorr          #+#    #+#             */
+/*   Updated: 2023/09/05 14:08:52 by anthtorr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_print_alphabet(void)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	char	letter;
-
-	letter = 'a';
-	while (letter <= 'z')
-	{
-		ft_putchar(letter);
-		letter++;
-	}
-	ft_putchar('\n');
+	*div = a / b;
+	*mod = a % b;
 }
 /*
+#include<stdio.h>
 int	main(void)
 {
-	ft_print_alphabet();
+	int	a,b,div,mod;
+
+	a = 10;
+	b = 4;
+	ft_div_mod(a, b, &div, &mod);
+	printf("La division entera de  %d entre %d es: %d\n", a, b, div);
+	printf("El residuo de %d entre %d es: %d\n", a, b, mod);
 	return (0);
 }
 */

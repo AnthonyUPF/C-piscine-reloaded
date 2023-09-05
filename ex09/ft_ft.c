@@ -1,33 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anthtorr <anthtorr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/04 18:04:26 by anthtorr          #+#    #+#             */
-/*   Updated: 2023/09/05 14:10:10 by anthtorr         ###   ########.fr       */
+/*   Created: 2023/09/05 13:31:39 by anthtorr          #+#    #+#             */
+/*   Updated: 2023/09/05 13:38:11 by anthtorr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_print_alphabet(void)
+void	ft_ft(int *nbr)
 {
-	char	letter;
-
-	letter = 'a';
-	while (letter <= 'z')
-	{
-		ft_putchar(letter);
-		letter++;
-	}
-	ft_putchar('\n');
+	*nbr = 42;
 }
 /*
+#include <stdio.h>
 int	main(void)
 {
-	ft_print_alphabet();
-	return (0);
+	int n;
+	int *nbr;
+	nbr = &n;
+	n = 10;
+	printf("El valor de n es: %d \n", n);
+	ft_ft(nbr);
+	printf("El nuevo valor de n es: %d \n", n);
 }
 */

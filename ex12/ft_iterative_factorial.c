@@ -1,33 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anthtorr <anthtorr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/04 18:04:26 by anthtorr          #+#    #+#             */
-/*   Updated: 2023/09/05 14:10:10 by anthtorr         ###   ########.fr       */
+/*   Created: 2023/09/05 14:12:44 by anthtorr          #+#    #+#             */
+/*   Updated: 2023/09/05 16:53:22 by anthtorr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_print_alphabet(void)
+int	ft_iterative_factorial(int nb)
 {
-	char	letter;
+	int	temp;
 
-	letter = 'a';
-	while (letter <= 'z')
+	if (nb < 0)
 	{
-		ft_putchar(letter);
-		letter++;
+		return (0);
 	}
-	ft_putchar('\n');
+	else if (nb == 0 || nb == 1)
+	{
+		return (1);
+	}
+	temp = 1;
+	while (nb > 1 && temp <= 2147483647)
+	{
+		temp *= nb;
+		nb--;
+	}
+	if (temp <= 2147483647)
+	{
+		return (temp);
+	}
+	else
+	{
+		return (0);
+	}
 }
-/*
+
+#include <stdio.h>
 int	main(void)
 {
-	ft_print_alphabet();
+	int nb = 13;
+	printf("El fatorial de %d es %d", nb, ft_iterative_factorial(nb));
 	return (0);
 }
-*/
+

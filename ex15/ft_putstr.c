@@ -1,33 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anthtorr <anthtorr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/04 18:04:26 by anthtorr          #+#    #+#             */
-/*   Updated: 2023/09/05 14:10:10 by anthtorr         ###   ########.fr       */
+/*   Created: 2023/09/05 16:28:25 by anthtorr          #+#    #+#             */
+/*   Updated: 2023/09/05 16:38:15 by anthtorr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_print_alphabet(void)
+void	ft_putstr(char *str)
 {
-	char	letter;
-
-	letter = 'a';
-	while (letter <= 'z')
+	while (*str != '\0')
 	{
-		ft_putchar(letter);
-		letter++;
+		ft_putchar(*str);
+		str++;
 	}
-	ft_putchar('\n');
 }
 /*
 int	main(void)
 {
-	ft_print_alphabet();
-	return (0);
+	char str[] = "Hola mundo!";
+	ft_putstr(str);
 }
 */
