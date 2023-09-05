@@ -1,0 +1,5 @@
+# Ignorar a.out en cualquier carpeta y subcarpeta
+**/a.out
+
+# Ignorar ft_putchar.c en cualquier carpeta y subcarpeta
+**/ft_putchar.c
