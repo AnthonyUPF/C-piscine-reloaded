@@ -1,45 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anthtorr <anthtorr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/05 14:12:44 by anthtorr          #+#    #+#             */
-/*   Updated: 2023/09/06 16:20:28 by anthtorr         ###   ########.fr       */
+/*   Created: 2023/09/06 17:09:20 by anthtorr          #+#    #+#             */
+/*   Updated: 2023/09/06 17:41:28 by anthtorr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
-{
-	long	temp;
+void	ft_putchar(char c);
 
-	if (nb < 0)
-	{
-		return (0);
-	}
-	else if (nb == 0 || nb == 1)
-	{
-		return (1);
-	}
-	temp = 1;
-	while (nb > 1 && temp <= 2147483647)
-	{
-		temp *= nb;
-		nb--;
-	}
-	if (temp <= 2147483647)
-	{
-		return ((int)temp);
-	}
-	return (0);
-}
-/*
-#include <stdio.h>
-int	main(void)
+void	ft_putstr(char *str)
 {
-	int nb = 13;
-	printf("El fatorial de %d es %d", nb, ft_iterative_factorial(nb));
+	while (*str != '\0')
+	{
+		ft_putchar(*str);
+		str++;
+	}
+}
+
+int	main(int argc, char **argv)
+{
+	int		counter;
+
+	if (argc > 1)
+	{
+		counter = 1;
+		while (counter < argc)
+		{
+			ft_putstr(argv[counter]);
+			ft_putchar('\n');
+			counter++;
+		}
+	}
 	return (0);
 }
-*/

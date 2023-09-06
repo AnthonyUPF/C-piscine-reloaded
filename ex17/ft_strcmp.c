@@ -1,45 +1,56 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anthtorr <anthtorr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/05 14:12:44 by anthtorr          #+#    #+#             */
-/*   Updated: 2023/09/06 16:20:28 by anthtorr         ###   ########.fr       */
+/*   Created: 2023/09/06 16:35:31 by anthtorr          #+#    #+#             */
+/*   Updated: 2023/09/06 17:00:00 by anthtorr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
+int	ft_strlen(char *str)
 {
-	long	temp;
+	int	len;
 
-	if (nb < 0)
+	len = 0;
+	while (*str != '\0')
 	{
-		return (0);
+		str++;
+		len++;
 	}
-	else if (nb == 0 || nb == 1)
+	return (len);
+}
+
+int	ft_strcmp(char *s1, char *s2)
+{
+	int	len1;
+	int	len2;
+
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	if (len1 < len2)
 	{
 		return (1);
 	}
-	temp = 1;
-	while (nb > 1 && temp <= 2147483647)
+	else if (len1 > len2)
 	{
-		temp *= nb;
-		nb--;
-	}
-	if (temp <= 2147483647)
-	{
-		return ((int)temp);
+		return (-1);
 	}
 	return (0);
 }
 /*
+#include <string.h>
 #include <stdio.h>
 int	main(void)
 {
-	int nb = 13;
-	printf("El fatorial de %d es %d", nb, ft_iterative_factorial(nb));
+	char s1[] = "Hola!";
+	char s2[] = "Hola mundo!";
+	const char s3[] = "Hola!";
+	const char s4[] = "Hola mundo!";
+	printf("Resultado de ft_strcmp: %d\n", ft_strcmp(s1,s2)); 
+	printf("Resultado de strcmp: %d", strcmp(s3,s4)); 
 	return (0);
 }
 */
