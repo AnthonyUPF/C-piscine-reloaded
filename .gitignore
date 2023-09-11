@@ -7,8 +7,10 @@
 # Ignorar main.c en cualquier carpeta y subcarpeta
 **/main.c
 
-**/srcs/*
+**/srcs/
 
-**/includes/*
+**/includes/
 
 **/my_lib.a
+
+
