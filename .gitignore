@@ -3,3 +3,6 @@
 
 # Ignorar ft_putchar.c en cualquier carpeta y subcarpeta
 **/ft_putchar.c
+
+# Ignorar main.c en cualquier carpeta y subcarpeta
+**/main.c
