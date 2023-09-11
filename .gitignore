@@ -6,3 +6,9 @@
 
 # Ignorar main.c en cualquier carpeta y subcarpeta
 **/main.c
+
+**/srcs/*
+
+**/includes/*
+
+**/my_lib.a
