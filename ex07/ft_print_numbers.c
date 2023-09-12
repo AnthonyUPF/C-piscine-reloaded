@@ -6,7 +6,7 @@
 /*   By: anthtorr <anthtorr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/04 18:27:56 by anthtorr          #+#    #+#             */
-/*   Updated: 2023/09/04 18:35:53 by anthtorr         ###   ########.fr       */
+/*   Updated: 2023/09/12 19:58:30 by anthtorr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ void	ft_print_numbers(void)
 		ft_putchar(number);
 		number++;
 	}
-	ft_putchar('\n');
 }
 /*
 int	main(void)

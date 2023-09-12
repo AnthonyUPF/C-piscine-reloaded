@@ -6,7 +6,7 @@
 /*   By: anthtorr <anthtorr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 17:58:53 by anthtorr          #+#    #+#             */
-/*   Updated: 2023/09/06 19:37:07 by anthtorr         ###   ########.fr       */
+/*   Updated: 2023/09/12 20:33:44 by anthtorr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,27 +21,43 @@ void	ft_putstr(char *str)
 	}
 }
 
-int	ft_ascii_value(char *str)
+int	ft_strcmp(char *s1, char *s2)
 {
-	int	sum;
-
-	sum = 0;
-	while (*str != '\0')
+	while (*s1 != '\0' && *s1 == *s2)
 	{
-		sum += *str;
-		str++;
+		s1++;
+		s2++;
 	}
-	return (sum);
+	return (*s1 - *s2);
 }
 
-void	ft_printstr(int lenstr, char **str)
+void	ft_sort_params(int argc, char **argv)
+{
+	char	*temp;
+	int		i;
+
+	i = 1;
+	while (i + 1 < argc)
+	{
+		if (ft_strcmp(argv[i], argv[i + 1]) > 0)
+		{
+			temp = argv[i];
+			argv[i] = argv[i + 1];
+			argv[i + 1] = temp;
+			i = 0;
+		}
+		i++;
+	}
+}
+
+void	ft_printstr(int argc, char **argv)
 {
 	int	counter;
 
 	counter = 1;
-	while (counter < lenstr)
+	while (counter < argc)
 	{
-		ft_putstr(str[counter]);
+		ft_putstr(argv[counter]);
 		ft_putchar('\n');
 		counter++;
 	}
@@ -49,27 +65,9 @@ void	ft_printstr(int lenstr, char **str)
 
 int	main(int argc, char **argv)
 {
-	char	*temp;
-	int		lenstr1;
-	int		lenstr2;
-	int		counter;
-
 	if (argc > 1)
 	{
-		counter = 1;
-		while (counter + 1 < argc)
-		{
-			lenstr1 = ft_ascii_value(argv[counter]);
-			lenstr2 = ft_ascii_value(argv[counter + 1]);
-			if (lenstr1 > lenstr2)
-			{
-				temp = argv[counter];
-				argv[counter] = argv[counter + 1];
-				argv[counter + 1] = temp;
-				counter = 0;
-			}
-			counter++;
-		}
+		ft_sort_params(argc, argv);
 		ft_printstr(argc, argv);
 	}
 	return (0);

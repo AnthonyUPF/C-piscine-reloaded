@@ -6,7 +6,7 @@
 /*   By: anthtorr <anthtorr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 20:25:20 by anthtorr          #+#    #+#             */
-/*   Updated: 2023/09/11 18:24:59 by anthtorr         ###   ########.fr       */
+/*   Updated: 2023/09/12 20:48:16 by anthtorr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,10 @@ int	*ft_range(int min, int max)
 		return (NULL);
 	}
 	str = malloc(max - min);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	len = 0;
 	while (min < max)
 	{
@@ -29,7 +33,6 @@ int	*ft_range(int min, int max)
 		len++;
 		min++;
 	}
-	str[len] = '\0';
 	return (str);
 }
 /*
