@@ -121,11 +121,9 @@ $>
    - Su nombre será: `"\?$*'MaRViN'*$?\"`
    - Ejemplo:
      ```
-    $>ls -lRa *MaRV* | cat -e
-   
-    -rw---xr-- 1 75355 32015 2 Oct 2 12:21 "\?$*'MaRViN'*$?\"$
-
-   $>
+     $>ls -lRa *MaRV* | cat -e
+     -rw---xr-- 1 75355 32015 2 Oct 2 12:21 "\?$*'MaRViN'*$?\""
+     $>
      ```
 
 ## Ejercicio 06 : ft_print_alphabet
