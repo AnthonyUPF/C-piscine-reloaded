@@ -345,5 +345,137 @@ Z
      char *ft_strdup(char *src);
      ```
 
+## Ejercicio 21 : ft_range
+
+**Directorio de entrega** : `ex21/`
+
+**Archivos para entregar** : `ft_range.c`
+
+**Funciones permitidas** : `malloc`
+
+1. Crea una función `ft_range` que devuelva un array de enteros. Este array de enteros debe contener todos los valores entre `min` y `max`.
+   - `min` incluido, `max` excluido.
+   - Así es como debería estar prototipada:
+     ```c
+     int *ft_range(int min, int max);
+     ```
+   -Si el valor de `min` es mayor o igual que el valor de `max`, se debe devolver un puntero nulo.
+
+## Ejercicio 22 : ft_abs.h
+
+**Directorio de entrega** : `ex22/`
+
+**Archivos para entregar** : `ft_abs.h`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea una macro `ABS` que reemplace su argumento por su valor absoluto:
+   ```c
+   #define ABS(Value)
+   ```
+   - Se te pide hacer algo que normalmente está prohibido por la Norma, pero esta será la única vez que lo autorizaremos.
+
+## Ejercicio 23 : ft_point.h
+
+**Directorio de entrega** : `ex23/`
+
+**Archivos para entregar** : `ft_point.h`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea un archivo `ft_point.h` que permita compilar el siguiente programa principal:
+
+```c
+#include "ft_point.h"
+
+void set_point(t_point *point)
+{
+    point->x = 42;
+    point->y = 21;
+}
+
+int main(void)
+{
+    t_point point;
+    set_point(&point);
+    return (0);
+}
+```
+
+## Ejercicio 24 : Makefile
+
+**Directorio de entrega** : `ex24/`
+
+**Archivos para entregar** : `Makefile`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea el Makefile que compilará tu librería `libft.a`.
+2. El Makefile obtendrá sus archivos fuente del directorio "srcs".
+3. El Makefile obtendrá sus archivos de cabecera del directorio "includes".
+4. La librería se ubicará en la raíz del ejercicio.
+5. El Makefile también deberá implementar las siguientes reglas: `clean`, `fclean` y `re`, así como `all`.
+   - `fclean` hace lo equivalente a un `make clean` y también borra el binario creado durante el `make`.
+   - `re` hace lo equivalente a un `make fclean` seguido de un `make`.
+6. Solo obtendremos tu Makefile y lo probaremos con nuestros archivos. Para este ejercicio, solo las siguientes 5 funciones obligatorias de tu librería deben ser manejadas: (ft_putchar, ft_putstr, ft_strcmp, ft_strlen y ft_swap).
+
+## Ejercicio 25 : ft_foreach
+
+**Directorio de entrega** : `ex25/`
+
+**Archivos para entregar** : `ft_foreach.c`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea la función `ft_foreach` que, para un arreglo de enteros dado, aplica una función a todos los elementos del arreglo. Esta función se aplicará siguiendo el orden del arreglo.
+   - Así es como debería estar prototipada:
+     ```c
+     void ft_foreach(int *tab, int length, void(*f)(int));
+     ```
+2. Por ejemplo, la función `ft_foreach` podría ser llamada de la siguiente manera para mostrar todos los enteros del arreglo:
+   ```c
+   ft_foreach(tab, 1337, &ft_putnbr);
+   ```
+
+## Ejercicio 26 : ft_count_if
+
+**Directorio de entrega** : `ex26/`
+
+**Archivos para entregar** : `ft_count_if.c`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea una función `ft_count_if` que devuelva el número de elementos del arreglo que devuelvan 1 al ser pasados a la función `f`.
+   - Así es como debería estar prototipada:
+     ```c
+     int ft_count_if(char **tab, int(*f)(char*));
+     ```
+2. El arreglo estará delimitado por 0.
+
+## Ejercicio 27 : display_file
+
+**Directorio de entrega** : `ex27/`
+
+**Archivos para entregar** : `Makefile` y archivos necesarios para tu programa
+
+**Funciones permitidas** : `close`, `open`, `read`, `write`
+
+1. Crea un programa llamado `ft_display_file` que muestre, en la salida estándar, solo el contenido del archivo proporcionado como argumento.
+2. El directorio de entrega debe tener un Makefile con las siguientes reglas: `all`, `clean`, `fclean`. El binario se llamará `ft_display_file`.
+3. La función `malloc` está prohibida. Solo puedes hacer este ejercicio declarando un arreglo de tamaño fijo.
+4. Todos los archivos dados como argumentos serán válidos.
+5. Los mensajes de error deben mostrarse en su salida reservada seguidos de una nueva línea.
+   - Si no se proporciona ningún argumento, debería mostrar:
+     ```
+     File name missing.
+     ```
+   - Si hay más de un argumento, debería mostrar:
+     ```
+     Too many arguments.
+     ```
+   - Si no se puede leer el archivo, debería mostrar:
+     ```
+     Cannot read file.
+     ```
 
 
