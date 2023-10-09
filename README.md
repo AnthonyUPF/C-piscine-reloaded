@@ -210,3 +210,139 @@ Z
    ```
 
 - Esta función divide los parámetros a por b y almacena el resultado en el entero apuntado por div. También almacena el resto de la división de a por b en el entero apuntado por mod.
+
+## Ejercicio 12 : ft_iterative_factorial
+
+**Directorio de entrega** : `ex12/`
+
+**Archivos para entregar** : `ft_iterative_factorial.c`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea una función iterativa que devuelva un número. Este número es el resultado de una operación factorial basada en el número proporcionado como parámetro.
+   - Si hay un error, la función debe devolver 0.
+   - Así es como debería estar prototipada:
+     ```c
+     int ft_iterative_factorial(int nb);
+     ```
+   - Tu función debe devolver su resultado en menos de dos segundos.
+
+## Ejercicio 13 : ft_recursive_factorial
+
+**Directorio de entrega** : `ex13/`
+
+**Archivos para entregar** : `ft_recursive_factorial.c`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea una función recursiva que devuelva el factorial del número proporcionado como parámetro.
+   - Si hay un error, la función debe devolver 0.
+   - Así es como debería estar prototipada:
+     ```c
+     int ft_recursive_factorial(int nb);
+     ```
+
+## Ejercicio 14 : ft_sqrt
+
+**Directorio de entrega** : `ex14/`
+
+**Archivos para entregar** : `ft_sqrt.c`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea una función que devuelva la raíz cuadrada de un número (si existe), o 0 si la raíz cuadrada es un número irracional.
+   - Así es como debería estar prototipada:
+     ```c
+     int ft_sqrt(int nb);
+     ```
+   -Tu función debe devolver su resultado en menos de dos segundos.
+
+## Ejercicio 15 : ft_putstr
+
+**Directorio de entrega** : `ex15/`
+
+**Archivos para entregar** : `ft_putstr.c`
+
+**Funciones permitidas** : `ft_putchar`
+
+1. Crea una función que muestre una cadena de caracteres en la salida estándar.
+   - Así es como debería estar prototipada:
+     ```c
+     void ft_putstr(char *str);
+     ```
+
+## Ejercicio 16 : ft_strlen
+
+**Directorio de entrega** : `ex16/`
+
+**Archivos para entregar** : `ft_strlen.c`
+
+**Funciones permitidas** : Ninguna
+
+1. Reproduce el comportamiento de la función `strlen` (man `strlen`).
+   - Así es como debería estar prototipada:
+     ```c
+     int ft_strlen(char *str);
+     ```
+
+## Ejercicio 17 : ft_strcmp
+
+**Directorio de entrega** : `ex17/`
+
+**Archivos para entregar** : `ft_strcmp.c`
+
+**Funciones permitidas** : Ninguna
+
+1. Reproduce el comportamiento de la función `strcmp` (man `strcmp`).
+   - Así es como debería estar prototipada:
+     ```c
+     int ft_strcmp(char *s1, char *s2);
+     ```
+
+## Ejercicio 18 : ft_print_params
+
+**Directorio de entrega** : `ex18/`
+
+**Archivos para entregar** : `ft_print_params.c`
+
+**Funciones permitidas** : `ft_putchar`
+
+1. Estamos tratando con un programa aquí, por lo tanto, deberías tener una función `main` en tu archivo `.c`.
+2. Crea un programa que muestre sus argumentos dados.
+   - Ejemplo:
+     ```
+     $>./a.out test1 test2 test3
+     test1
+     test2
+     test3
+     ```
+
+## Ejercicio 19 : ft_sort_params
+
+**Directorio de entrega** : `ex19/`
+
+**Archivos para entregar** : `ft_sort_params.c`
+
+**Funciones permitidas** : `ft_putchar`
+
+1. Estamos tratando con un programa aquí, por lo tanto, deberías tener una función `main` en tu archivo `.c`.
+2. Crea un programa que muestre sus argumentos dados ordenados por orden ascii.
+   - Debería mostrar todos los argumentos, excepto `argv[0]`.
+   - Todos los argumentos deben tener su propia línea.
+
+## Ejercicio 20 : ft_strdup
+
+**Directorio de entrega** : `ex20/`
+
+**Archivos para entregar** : `ft_strdup.c`
+
+**Funciones permitidas** : `malloc`
+
+1. Reproduce el comportamiento de la función `strdup` (man `strdup`).
+   - Así es como debería estar prototipada:
+     ```c
+     char *ft_strdup(char *src);
+     ```
+
+
+
