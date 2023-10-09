@@ -196,4 +196,17 @@ Z
      void ft_swap(int *a, int *b);
      ```
 
+## Ejercicio 11 : ft_div_mod
 
+**Directorio de entrega** : `ex11/`
+
+**Archivos para entregar** : `ft_div_mod.c`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea una función `ft_div_mod` con el siguiente prototipo:
+   ```c
+   void ft_div_mod(int a, int b, int *div, int *mod);
+   ```
+
+- Esta función divide los parámetros a por b y almacena el resultado en el entero apuntado por div. También almacena el resto de la división de a por b en el entero apuntado por mod.
