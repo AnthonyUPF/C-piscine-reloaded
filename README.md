@@ -30,7 +30,7 @@ Si has completado previamente alguno de estos ejercicios durante la Piscine C, t
 
 1. Crea los siguientes archivos y directorios para asegurarte de que el comando `ls -l` en tu directorio muestre la salida como se muestra:
 
-''' sh
+```sh
 $> ls -l
 total 42
 drwx--xr-x 2 XX XX XX Jun 1 20:47 test0
@@ -41,7 +41,7 @@ dr-x---r-- 2 XX XX XX Jun 1 22:45 test2
 -r-----r-- 2 XX XX 1 Jun 1 23:44 test5
 lrwxr-xr-x 1 XX XX 5 Jun 1 22:20 test6 -> test0
 $>
-'''
+```
 
 2. Si la fecha del ejercicio (1 Jun) tiene seis meses o más de antigüedad, mostrar el año es aceptable.
 
