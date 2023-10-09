@@ -315,6 +315,7 @@ Z
      test1
      test2
      test3
+     $>
      ```
 
 ## Ejercicio 19 : ft_sort_params
