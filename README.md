@@ -46,3 +46,56 @@ $>
 2. Si la fecha del ejercicio (1 Jun) tiene seis meses o más de antigüedad, mostrar el año es aceptable.
 
 3. Una vez completado, ejecuta `tar -cf exo.tar *` para crear el archivo que se enviará.
+
+
+## Ejercicio 01 : Z
+
+**Directorio de entrega** : `ex01/`
+
+**Archivos para entregar** : `z`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea un archivo llamado `z` que devuelva "Z", seguido de un salto de línea, cada vez que se use el comando `cat` en él.
+
+```
+?>cat z
+Z
+?>
+```
+
+
+## Ejercicio 02 : clean
+
+**Directorio de entrega** : `ex02/`
+
+**Archivos para entregar** : `clean`
+
+**Funciones permitidas** : Ninguna
+
+1. En un archivo llamado `clean`, coloca la línea de comando que buscará todos los archivos, tanto en el directorio actual como en sus subdirectorios, con un nombre que termine con `~`, o con un nombre que comience y termine con `#`.
+
+2. La línea de comando mostrará y eliminará todos los archivos encontrados. Solo se permite un comando: sin `;` o `&&` u otras triquiñuelas.
+
+
+## Ejercicio 03 : find_sh
+
+**Directorio de entrega** : `ex03/`
+
+**Archivos para entregar** : `find_sh.sh`
+
+**Funciones permitidas** : Ninguna
+
+1. Escribe una línea de comando que busque todos los nombres de archivo que terminen con ".sh" (sin comillas) en el directorio actual y todos sus subdirectorios. Debería mostrar solo los nombres de archivo sin el `.sh`.
+
+Ejemplo de salida:
+
+```
+$>./find_sh.sh | cat -e
+find_sh$
+file1$
+file2$
+file3$
+$>
+```
+
