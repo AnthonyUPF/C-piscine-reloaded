@@ -87,15 +87,15 @@ Z
 
 1. Escribe una línea de comando que busque todos los nombres de archivo que terminen con ".sh" (sin comillas) en el directorio actual y todos sus subdirectorios. Debería mostrar solo los nombres de archivo sin el `.sh`.
 
-Ejemplo de salida:
+   - Ejemplo de salida:
 
-```
-$>./find_sh.sh | cat -e
-find_sh$
-file1$
-file2$
-file3$
-$>
+   ```
+   $>./find_sh.sh | cat -e
+   find_sh$
+   file1$
+   file2$
+   file3$
+   $>
 ```
 
 ## Ejercicio 04 : MAC
