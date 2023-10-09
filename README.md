@@ -64,7 +64,6 @@ Z
 ?>
 ```
 
-
 ## Ejercicio 02 : clean
 
 **Directorio de entrega** : `ex02/`
@@ -98,4 +97,103 @@ file2$
 file3$
 $>
 ```
+
+## Ejercicio 04 : MAC
+
+**Directorio de entrega** : `ex04/`
+
+**Archivos para entregar** : `MAC.sh`
+
+**Funciones permitidas** : Ninguna
+
+1. Escribe una línea de comando que muestre las direcciones MAC de tu máquina. Cada dirección debe ir seguida de un salto de línea.
+
+## Ejercicio 05 : ¿Puedes crearlo?
+
+
+**Directorio de entrega** : `ex05/`
+
+**Archivos para entregar** : `"\?$*'MaRViN'*$?\""`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea un archivo que contenga solo "42", y NADA más.
+   - Su nombre será: `"\?$*'MaRViN'*$?\"`
+   - Ejemplo:
+     ```
+    $>ls -lRa *MaRV* | cat -e
+    -rw---xr-- 1 75355 32015 2 Oct 2 12:21 "\?$*'MaRViN'*$?\"$
+    $>
+     ```
+
+## Ejercicio 06 : ft_print_alphabet
+
+**Directorio de entrega** : `ex06/`
+
+**Archivos para entregar** : `ft_print_alphabet.c`
+
+**Funciones permitidas** : `ft_putchar`
+
+1. Crea una función que muestre el alfabeto en minúsculas, en una sola línea, en orden ascendente, empezando por la letra 'a'.
+   - Así es como debería estar prototipada:
+     ```c
+     void ft_print_alphabet(void);
+     ```
+
+## Ejercicio 07 : ft_print_numbers
+
+**Directorio de entrega** : `ex07/`
+
+**Archivos para entregar** : `ft_print_numbers.c`
+
+**Funciones permitidas** : `ft_putchar`
+
+1. Crea una función que muestre todos los dígitos, en una sola línea, en orden ascendente.
+   - Así es como debería estar prototipada:
+     ```c
+     void ft_print_numbers(void);
+     ```
+
+## Ejercicio 08 : ft_is_negative
+
+**Directorio de entrega** : `ex08/`
+
+**Archivos para entregar** : `ft_is_negative.c`
+
+**Funciones permitidas** : `ft_putchar`
+
+1. Crea una función que muestre 'N' o 'P' dependiendo del signo del entero ingresado como parámetro. Si 'n' es negativo, muestra 'N'. Si 'n' es positivo o nulo, muestra 'P'.
+   - Así es como debería estar prototipada:
+     ```c
+     void ft_is_negative(int n);
+     ```
+
+## Ejercicio 09 : ft_ft
+
+**Directorio de entrega** : `ex09/`
+
+**Archivos para entregar** : `ft_ft.c`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea una función que tome un puntero a int como parámetro y establezca el valor "42" en ese int.
+   - Así es como debería estar prototipada:
+     ```c
+     void ft_ft(int *nbr);
+     ```
+
+## Ejercicio 10 : ft_swap
+
+**Directorio de entrega** : `ex10/`
+
+**Archivos para entregar** : `ft_swap.c`
+
+**Funciones permitidas** : Ninguna
+
+1. Crea una función que intercambie el valor de dos enteros cuyas direcciones se ingresan como parámetros.
+   - Así es como debería estar prototipada:
+     ```c
+     void ft_swap(int *a, int *b);
+     ```
+
 
