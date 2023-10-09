@@ -30,7 +30,7 @@ Si has completado previamente alguno de estos ejercicios durante la Piscine C, t
 
 1. Crea los siguientes archivos y directorios para asegurarte de que el comando `ls -l` en tu directorio muestre la salida como se muestra:
 
-```sh
+```
 $> ls -l
 total 42
 drwx--xr-x 2 XX XX XX Jun 1 20:47 test0
